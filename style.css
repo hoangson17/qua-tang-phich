@@ -164,6 +164,16 @@ ul,li{
     padding:10px 20px;
 }
 
+@media screen and (max-width: 576px) { 
+    .section_seven .box-content{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .section_seven inner-slogan{
+        font-size: 20px;
+    }
+}
+
 .section_seven .box-content img{
     width: 30px;
     position: absolute;
