@@ -42,12 +42,12 @@ ul,li{
 }
 @media screen and (max-width: 992px) { 
     .title--small{
-        font-size: 18px;
+        font-size: 18px!important;
         font-family: font_strong;
     }
     
     .inner-title{
-        font-size: 20px;
+        font-size: 25px!important;
         font-weight: 700;
         text-align: center;
         font-family: font_strong;
@@ -72,11 +72,11 @@ ul,li{
 }
 
 /* Slide tiếp theo (next) sẽ to hơn */
-.section_three .swiper-slide-next img {
-    transform: scale(1); /* Phóng to 20% */
+/* .section_three .swiper-slide-next img {
+    transform: scale(1); 
     width: 100%;
     transition: transform 0.3s ease;
-}
+} */
 /* Căn giữa nút điều hướng dưới slider */
 .section_three .swiper-buttons {
     display: flex;

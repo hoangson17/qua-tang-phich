@@ -31,7 +31,7 @@
     <section class="section_two">
         <div class="container">
             <div class="row">
-                <div class="col-10 text-center m-auto">
+                <div class="col-sm-12 col-md-10 text-center m-auto">
                     <p style="font-size: 25px; font-weight:bold!important;" class="title--small">
                         Bạn đang tìm kiếm một sản phẩm giữ nhiệt vượt trội, an toàn cho
                         sức khỏe, phù hợp sử dụng hàng ngày và làm quà tặng ý nghĩa?
@@ -56,16 +56,20 @@
             <div class="col-12 text-center">
                 <p class="inner-title m-auto text-center pb-4">QUÀ TẶNG Ý NGHĨA <br> CHO MỌI DỊP</p>
                 <!-- navigation="true" -->
-                <swiper-container swiper-container class="mySwiper" autoplay-delay="2000" space-between="30" loop="true"
-                    slides-per-view="3">
-                    <swiper-slide><img width="90%" src="./img/section_2-1.png" alt=""></swiper-slide>
-                    <swiper-slide><img width="90%" src="./img/section_2-2.png" alt=""></swiper-slide>
-                    <swiper-slide><img width="90%" src="./img/section_2-3.png" alt=""></swiper-slide>
-                    <swiper-slide><img width="90%" src="./img/section_2-4.png" alt=""></swiper-slide>
-                    <swiper-slide><img width="90%" src="./img/section_2-5.png" alt=""></swiper-slide>
-                    <swiper-slide><img width="90%" src="./img/section_2-6.png" alt=""></swiper-slide>
-                    <swiper-slide><img width="90%" src="./img/section_2-7.png" alt=""></swiper-slide>
-                    <swiper-slide><img width="90%" src="./img/section_2-8.png" alt=""></swiper-slide>
+                <swiper-container swiper-container class="mySwiper" autoplay-delay="2000" space-between="0" loop="true"
+                breakpoints='{
+                    "320": { "slidesPerView": 1 },
+                    "768": { "slidesPerView": 2 },
+                    "1024": { "slidesPerView": 3 }
+                }'>
+                    <swiper-slide class="col-md-4 col-12 p-2"><img width="90%" src="./img/section_2-1.png" alt=""></swiper-slide>
+                    <swiper-slide class="col-md-4 col-12 p-2"><img width="90%" src="./img/section_2-2.png" alt=""></swiper-slide>
+                    <swiper-slide class="col-md-4 col-12 p-2"><img width="90%" src="./img/section_2-3.png" alt=""></swiper-slide>
+                    <swiper-slide class="col-md-4 col-12 p-2"><img width="90%" src="./img/section_2-4.png" alt=""></swiper-slide>
+                    <swiper-slide class="col-md-4 col-12 p-2"><img width="90%" src="./img/section_2-5.png" alt=""></swiper-slide>
+                    <swiper-slide class="col-md-4 col-12 p-2"><img width="90%" src="./img/section_2-6.png" alt=""></swiper-slide>
+                    <swiper-slide class="col-md-4 col-12 p-2"><img width="90%" src="./img/section_2-7.png" alt=""></swiper-slide>
+                    <swiper-slide class="col-md-4 col-12 p-2"><img width="90%" src="./img/section_2-8.png" alt=""></swiper-slide>
                 </swiper-container>
                 <p class="inner-title mt-3 mb-0" style="font-size: 22px; font-weight:bold;">
                     Quà tặng ngày đặc biệt
@@ -80,13 +84,17 @@
         <div class="container">
             <div class="col-12 text-center">
                 <p class="inner-title m-auto text-center pb-4 ">QUÀ TẶNG Ý NGHĨA <br> CHO MỌI DỊP</p>
-                <swiper-container swiper-container class="mySwiper" autoplay-delay="2000" space-between="30" loop="true"
-                    slides-per-view="3">
-                    <swiper-slide><img width="90%" src="./img/section_3-1.png" alt=""></swiper-slide>
-                    <swiper-slide><img width="90%" src="./img/section_3-2.png" alt=""></swiper-slide>
-                    <swiper-slide><img width="90%" src="./img/section_3-3.png" alt=""></swiper-slide>
-                    <swiper-slide><img width="90%" src="./img/section_3-4.png" alt=""></swiper-slide>
-                    <swiper-slide><img width="90%" src="./img/section_3-5.png" alt=""></swiper-slide>
+                <swiper-container swiper-container class="mySwiper" autoplay-delay="2000" space-between="0" loop="false"
+                breakpoints='{
+                    "320": { "slidesPerView": 1 },
+                    "768": { "slidesPerView": 2 },
+                    "1024": { "slidesPerView": 3 }
+                }'>
+                    <swiper-slide class="col-md-4 col-12 p-2"><img width="90%" src="./img/section_3-1.png" alt=""></swiper-slide>
+                    <swiper-slide class="col-md-4 col-12 p-2"><img width="90%" src="./img/section_3-2.png" alt=""></swiper-slide>
+                    <swiper-slide class="col-md-4 col-12 p-2"><img width="90%" src="./img/section_3-3.png" alt=""></swiper-slide>
+                    <swiper-slide class="col-md-4 col-12 p-2"><img width="90%" src="./img/section_3-4.png" alt=""></swiper-slide>
+                    <swiper-slide class="col-md-4 col-12 p-2"><img width="90%" src="./img/section_3-5.png" alt=""></swiper-slide>
                 </swiper-container>
                 <p class="inner-title mt-3 mb-0" style="font-size: 22px; font-weight:bold;">
                     Quà tặng doanh nghiệp
@@ -263,7 +271,11 @@
         <div class="container">
             <div class="col-12 text-center">
                 <p class="m-auto text-center pb-4 inner-title">CÁC SẢN PHẨM BÁN CHẠY</p>
-                <swiper-container swiper-container class="mySwiper" space-between="0" loop="true" slides-per-view="1">
+                <swiper-container swiper-container class="mySwiper" space-between="0" loop="true" breakpoints='{
+                    "320": { "slidesPerView": 1 },
+                    "768": { "slidesPerView": 3 },
+                    "1024": { "slidesPerView": 4 }
+                }'>
                     <swiper-slide class="col-md-3 col-12 p-2">
                         <div class="box-product">
                             <img style="width: 80%;" src="./img/section_9-1.png" alt="">
@@ -314,7 +326,11 @@
     <section class="section_nine mt-5">
         <div class="container">
             <div class="col-12 text-center">
-                <swiper-container swiper-container class="mySwiper" space-between="0" loop="true" slides-per-view="1">
+                <swiper-container swiper-container class="mySwiper" space-between="0" loop="true" breakpoints='{
+                    "320": { "slidesPerView": 1 },
+                    "768": { "slidesPerView": 3 },
+                    "1024": { "slidesPerView": 4 }
+                }'>
                     <swiper-slide class="col-md-3 col-12 p-2">
                         <div class="box-product">
                             <img style="width: 80%;" src="./img/section_10-1.png" alt="">
@@ -373,7 +389,11 @@
     <section class="section_nine mt-5">
         <div class="container">
             <div class="col-12 text-center">
-                <swiper-container swiper-container class="mySwiper" space-between="0" loop="true" slides-per-view="1">
+                <swiper-container swiper-container class="mySwiper" space-between="0" loop="true" breakpoints='{
+                    "320": { "slidesPerView": 1 },
+                    "768": { "slidesPerView": 3 },
+                    "1024": { "slidesPerView": 4 }
+                }'>
                     <swiper-slide class="col-md-3 col-12 p-2">
                         <div class="box-product">
                             <img style="width: 80%;" src="./img/section_11-1.png" alt="">
