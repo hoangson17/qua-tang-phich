@@ -1,0 +1,231 @@
+*{
+    /* font-family: 'UTM Avo', sans-serif; */
+    color: #22275F;     
+    font-family: font_small;           
+}
+@font-face {
+    font-family:font_small;
+    src:url('./src/utm-avo/utm-avo.ttf') format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face {
+    font-family:font_strong;
+    src:url('./src/utm-avo/utm-avobold.ttf') format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face {
+    font-family:font_slogan;
+    src:url('./src/vl_fourth_medium/VL-FOURTH-MEDIUM.OTF') format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+ul,li{
+    list-style-type: none;
+}
+
+.section_four,.section_five,.section_six,.section_seven,.section_eight,.section_ten{
+    margin-top: 80px;
+}
+
+.title--small{
+    font-size: 25px;
+    font-family: font_strong;
+}
+
+.inner-title{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    font-family: font_strong;
+}
+@media screen and (max-width: 992px) { 
+    .title--small{
+        font-size: 18px;
+        font-family: font_strong;
+    }
+    
+    .inner-title{
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+        font-family: font_strong;
+    }
+}
+.section_two {
+    margin-top: 80px;
+}
+@media screen and (max-width: 576px) { 
+    .section_two p{
+        width: 100%!important;
+        text-align: justify;
+        padding: 10px 0!important;
+    }
+}
+.section_three{
+    margin-top: 80px;
+}
+
+.section_three swiper-slide{
+    text-align: center;
+}
+
+/* Slide tiếp theo (next) sẽ to hơn */
+.section_three .swiper-slide-next img {
+    transform: scale(1); /* Phóng to 20% */
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+/* Căn giữa nút điều hướng dưới slider */
+.section_three .swiper-buttons {
+    display: flex;
+    justify-content: center; /* Căn giữa */
+    align-items: center;
+    margin-top: 15px; /* Khoảng cách với slider */
+    gap: 20px; /* Khoảng cách giữa 2 nút */
+}
+
+/* Định dạng chung cho nút Previous & Next */
+.section_three .swiper-button-prev,
+.swiper-button-next {
+    background-color: rgba(0, 0, 0, 0.6); /* Màu nền trong suốt 60% */
+    color: white;
+    border: none;
+    border-radius: 50%; /* Làm tròn nút */
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hiệu ứng hover */
+.section_three .swiper-button-prev:hover,
+.swiper-button-next:hover {
+    background-color: black;
+}
+
+/* Định dạng icon bên trong nút */
+.section_three .swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+
+.section_three .inner-title{
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.section_four .title--small{
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) { 
+    .section_four .inner-desc{
+        margin-bottom: 20px;
+    }
+}
+
+.section_six .inner-content{
+    margin-top: 80px;
+}
+
+@media (max-width: 992px) { 
+    .section_six .inner-content{
+        margin-top: 0px;
+    }
+}
+@media (max-width: 768px) { 
+    .section_six .inner-content{
+        margin-top: 30px;
+    }
+    .section_six .inner-desc{
+        margin-bottom: 30px;
+    }
+}
+
+.section_seven .title--small{
+    font-size: 22px;
+    text-align: left;
+    text-align: center;
+}
+
+.section_seven .box-content{
+    background-color: #fff;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    border-radius: 10px;
+    padding:10px 20px;
+}
+
+.section_seven .box-content img{
+    width: 30px;
+    position: absolute;
+    left: 4px;
+    top: 10px;
+}
+
+.section_seven .inner-slogan{
+    font-size: 50px;
+    font-family: font_slogan;
+    color: #71BD43;
+}
+
+
+.section_eight .inner-desc{
+    width: 67%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+@media screen and (max-width: 576px) { 
+    .section_eight .inner-desc{
+        width: 100%;
+        margin: 20px 0!important;
+    }
+}
+.section_nine .box-title{
+    font-size: 20px;
+}
+
+.section_nine .box-product {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 5px;
+    width: 95%;
+}
+
+.section_nine .box-product img {
+    width: 100%;
+}
+
+.section_nine .box-product p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.section_ten .register-form{
+    background-color: #6EBE45;
+    border-radius: 20px;
+}
+
+.section_ten .register-form input{
+    border: 2px solid #fff;
+    border-radius: 8px;
+    width: 80%;
+    background-color: #6EBE45;
+
+}
+.section_ten .register-form input::placeholder{
+    color: #ffffffbb;
+    padding: 20px;
+}
+input:focus {
+    outline: none;
+}
