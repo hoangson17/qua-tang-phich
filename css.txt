@@ -1,19 +1,8 @@
-*{
-    /* font-family: 'UTM Avo', sans-serif; */
+body{
     color: #22275F;     
-    font-family: font_small;           
 }
-@font-face {
-    font-family:font_small;
-    src:url('./src/utm-avo/utm-avo.ttf') format('truetype');
-    font-weight:normal;
-    font-style:normal;
-}
-@font-face {
-    font-family:font_strong;
-    src:url('./src/utm-avo/utm-avobold.ttf') format('truetype');
-    font-weight:normal;
-    font-style:normal;
+.header{
+    color: #000000;
 }
 @font-face {
     font-family:font_slogan;
@@ -41,26 +30,26 @@ ul,li{
 
 .title--small{
     font-size: 25px;
-    font-family: font_strong;
+    font-weight: bold;
 }
 
 .inner-title{
     font-size: 30px;
     font-weight: 700;
     text-align: center;
-    font-family: font_strong;
+    font-weight: bold;
 }
 @media screen and (max-width: 992px) { 
     .title--small{
         font-size: 18px!important;
-        font-family: font_strong;
+        font-weight: bold;
     }
     
     .inner-title{
         font-size: 25px!important;
         font-weight: 700;
         text-align: center;
-        font-family: font_strong;
+        font-weight: bold;
     }
     .section_one .banner_1 {
         width: 100%;
@@ -195,9 +184,8 @@ ul,li{
 
 .section_seven .box-content img{
     width: 30px;
-    position: absolute;
-    left: 4px;
-    top: 10px;
+    left: 0px;
+    top: 8px;
 }
 
 .section_seven .inner-slogan{
